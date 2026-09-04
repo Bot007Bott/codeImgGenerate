@@ -179,6 +179,27 @@
             />
           </div>
 
+          <div class="control">
+            <label for="widthMode">Image Width</label>
+            <select id="widthMode">
+              <option value="full" selected>Full Preview</option>
+              <option value="auto">Auto-fit Content</option>
+              <option value="fixed">Fixed Width</option>
+            </select>
+          </div>
+
+          <div class="control" id="fixedWidthCtrl" style="display: none">
+            <label>Width <span id="fixedWidthVal">680</span>px</label>
+            <input
+              id="fixedWidth"
+              type="range"
+              min="320"
+              max="1400"
+              value="680"
+              step="10"
+            />
+          </div>
+
           <div class="control toggle-ctrl">
             <span class="toggle-text">Line Numbers</span>
             <label class="switch">
